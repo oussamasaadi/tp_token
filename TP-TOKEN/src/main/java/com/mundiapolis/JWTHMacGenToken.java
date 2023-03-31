@@ -16,8 +16,8 @@ public class JWTHMacGenToken {
         String secret="MTIzNjU0Nzg5OTU2NDc4MjEyMzUyMTQ3ODU2MzI1MTQ=";
         SecretKey secretKey=new SecretKeySpec(secret.getBytes(),0,secret.length(), SignatureAlgorithm.HS256.getJcaName());
         Map <String,String> claims=new HashMap<>();
-        claims.put("name","kawtar");
-        claims.put("email","k.benyahya@gmail.com");
+        claims.put("name","oussama");
+        claims.put("email","o.saadi@mundiapolis.com");
         JwtBuilder jwtBuilder= Jwts.builder().setIssuedAt(new Date()).setId("123321")
                 .setExpiration(new Date(System.currentTimeMillis()+100000))
                 .setClaims(claims)
